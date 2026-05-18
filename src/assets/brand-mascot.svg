@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <defs>
+    <linearGradient id="m" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00d9ff"/>
+      <stop offset="0.55" stop-color="#1e9bff"/>
+      <stop offset="1" stop-color="#7c4dff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <ellipse cx="100" cy="200" rx="70" ry="18" fill="#00d9ff" opacity="0.08"/>
+  <path d="M100 28c-38 0-62 28-62 68 0 52 28 88 62 88s62-36 62-88c0-40-24-68-62-68z" fill="#10131f" stroke="url(#m)" stroke-width="2.5" filter="url(#glow)"/>
+  <path d="M56 96c12-8 28-12 44-12s32 4 44 12" stroke="url(#m)" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+  <ellipse cx="72" cy="108" rx="10" ry="8" fill="#00d9ff" opacity="0.9"/>
+  <ellipse cx="128" cy="108" rx="10" ry="8" fill="#00d9ff" opacity="0.9"/>
+  <path d="M88 132c6 10 18 16 30 0" stroke="#7c4dff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M100 52l-8 18h16L100 52z" fill="url(#m)" opacity="0.9"/>
+</svg>

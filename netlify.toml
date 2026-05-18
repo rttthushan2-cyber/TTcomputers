@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+[build.environment]
+  # @netlify/vite-plugin-tanstack-start expects Node 22.12+ (see package engines)
+  NODE_VERSION = "22"
